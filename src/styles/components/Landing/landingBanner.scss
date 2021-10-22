@@ -1,0 +1,132 @@
+@import '../media-queries.scss';
+
+.banner{
+    height: 100vh;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/05f7f3d2-dc99-45e5-a338-7a450079a1ca/NP-en-20210823-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-position: center;
+    background-size: contain;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+
+    @include mobile{
+                
+    height: 80vh;
+       
+    }
+
+    .banner-content{
+        position: absolute;
+        width:100%;
+        padding: 75px 0;
+        max-width: 950px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        z-index: 1;
+
+        @include mobile{
+                
+            top: 60%;
+               
+            }
+
+
+        .title{
+            font-size: 4rem;
+            max-width: 800px;
+            line-height: 1.1;
+            margin-bottom: .5rem;
+            display:flex;
+            font-weight: 700;
+            margin: 0 auto;
+
+            @include mobile{
+                font-size: 2.2rem;
+                line-height: 1;
+                padding: 0 20px;
+            }
+
+
+        }
+
+        .subtitle{
+            margin: 1rem auto;
+            font-size: 26px;
+            max-width: 800px;
+            font-weight: 500;
+
+            @include mobile{
+                font-size: 18px;
+                padding: 0 18px;
+                margin: 0.5rem 0;
+            }
+        }
+
+        .disclaimer{
+            font-size: 1.2rem;
+            padding-bottom: 20px;
+            padding-top: 16px;
+            font-weight: 400;
+
+            @include mobile{
+                
+                font-size: 18px;
+                padding: 5px 20px 18px 20px;
+            
+               
+            }
+
+        }
+
+        .bannerForm{
+         
+            input{
+                padding: 22px;
+                outline: none;
+                width: 60%;
+                max-width: 940px;
+                font-size: 1rem;
+
+                @include mobile{
+                    width: 80%;
+                    margin-bottom: 20px;
+                   
+                }
+            }
+
+            .input-btn{
+                padding: 24px 26px;
+                font-size: 1rem;
+                box-sizing: border-box;
+                color: #fff;
+                background-color: #e50914;
+                border:none;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+
+
+
+
+    .banner-gradient{
+        width: 100%;
+        z-index: 1;
+        height: 100vh;
+        background: rgba($color: #000000, $alpha: 0.4);
+        background-image: linear-gradient(
+            to top,
+            rgba(0,0,0,0.8) 0,
+            rgba(0,0,0,0) 60%,
+            rgba(0,0,0,0.8) 100%,
+
+        );
+    }
+
+}

@@ -1,0 +1,114 @@
+
+@import '../media-queries.scss';
+
+.login{
+    max-width: 460px;
+    padding: 60px 68px 40px;
+    background: rgba($color: #000000, $alpha: 0.75);
+    margin: 10px auto;
+
+    .loginForm{
+        display: flex;
+        flex-direction: column;
+
+
+        h1{
+            margin: 0;
+            text-align: left;
+            margin-bottom: 28px;
+            font-size: 32px;
+        }
+
+        input{
+            outline: none;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            border: none;
+            background: #333;
+            color:#8c8c8c;
+            font-size: 16px;
+
+        }
+
+        button{
+            background: #e50914;
+            padding: 16px;
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            margin: 24px 0 12px;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .rememberMe{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            margin-bottom: 20px;
+
+            .checkbox{
+                height: 16px;
+                border: none;
+                background: #737373;
+                position: relative;
+
+                &::after{
+                    content: 'RememberMe';
+                    width: 100%;
+                    font-size: 14px;
+                    position: absolute;
+                    right: -20px;
+                }
+
+            }
+
+            
+            p{
+                font-size: 14px;
+                color: #b3b3b3;
+                margin: 0;
+                padding: 0;
+            }
+
+          
+
+        }
+        h4{
+            text-align: left;
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: 400;
+
+            span{
+                color: #737373;
+            }
+
+            .signup-link{
+  
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+           
+                 }
+            }
+
+          
+        }
+
+        p{
+            font-size: 14px;
+            color:#8c8c8c;
+            text-align: left;
+            margin-top: 16px;
+
+            span{
+                color:#0071eb;
+            }
+        }
+            
+    }
+}

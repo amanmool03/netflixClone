@@ -1,0 +1,59 @@
+
+@import '../media-queries.scss';
+
+.footer{
+    color:#757575;
+    margin-top: 80px;
+    min-width: 190px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    border-top: 8px solid #222;
+    position: relative;
+
+    @include mobile{
+                
+        margin-top: 0;
+           
+    }
+    .site-footer{
+     
+        justify-content: center;
+        width: 90%;
+        padding-top: 30px;
+        margin: 0 auto;
+
+
+        .footer-top{
+            padding: 0;
+            margin: 0 auto;
+            max-width: 1000px;
+            margin-bottom: 30px;
+        }
+
+        .footer-links{
+            max-width: 1000px !important;
+            font-size: 16px;
+            padding:0;
+            margin: 0 auto;
+
+            .footer-link-item{
+                list-style: none;
+                width: 25%;
+                min-width: 100px;
+                margin-bottom: 16px;
+                padding-right: 12px;
+                vertical-align: top;
+                display: inline-block;
+           
+                @include mobile{
+                
+                    width: 50%;
+                       
+                    }
+            }
+
+        }
+    }
+}

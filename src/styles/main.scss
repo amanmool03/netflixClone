@@ -1,0 +1,28 @@
+@import 'components/variables.scss';
+@import 'components/Home/home.scss';
+@import 'components/font.scss';
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #111;
+}
+
+body::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+    /*outline: 1px solid slategrey;*/
+    border-radius: 20px;
+}
+
+

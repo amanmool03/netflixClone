@@ -1,0 +1,77 @@
+@import '../media-queries.scss';
+
+.related_movies{
+    max-width: 1200px;
+    margin: 20px auto;
+
+    @include mobile{           
+        h2{
+            margin-left: 20px;
+        }
+       }
+
+    .recommended-posters{
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        // flex-wrap: wrap;
+        padding: 20px;
+
+        &::-webkit-scrollbar {
+            height: 0.4em;
+
+            @include mobile{           
+               display: none;
+              }
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #3a3a3a;
+            /*outline: 1px solid slategrey;*/
+            border-radius: 20px;
+        }
+        
+        .recommended_link{
+            height: 100%;
+            .recommended_poster{
+                max-height: 250px;
+                object-fit: contain;
+                margin-right: 20px;
+                // margin-bottom: 20px;
+                // width: 100%;
+                transition: transform 50ms;
+                background: #3a3a3a;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.08);
+                    opacity: 1;
+                }
+    
+               
+            }         
+              
+        }
+    
+
+    }
+
+
+
+
+
+
+    .skeleton-row{
+        height: 200px;
+        width: 134px;
+        margin-right: 20px;
+        background: #3a3a3a;
+        background-image: linear-gradient(to right, #3a3a3a 0%, #3f3f3f 10%, #4a4a4a 20%, #3f3f3f 30%, #3a3a3a 50%, #3a3a3a 100%);
+        background-repeat: no-repeat;
+        background-size: 800px 400px;
+        animation: shimmer infinite forwards 1s ease-in-out;
+        position: relative;
+        z-index: 3;
+
+       
+    }
+}

@@ -1,0 +1,15 @@
+@import '../media-queries.scss';
+
+.movie{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    margin-bottom: 60px;
+
+    @include mobile{           
+        margin-top: 50px;
+        height: 300px;
+        width: 90%;
+      }
+}

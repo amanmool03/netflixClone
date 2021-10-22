@@ -1,0 +1,88 @@
+
+@import '../media-queries.scss';
+
+.profile{
+    color:white;
+    height: 100vh;
+    width: 100%;
+
+    .profile_content{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        margin: 0  auto;
+        padding-top: 10%;
+        max-width: 800px;
+
+        @include mobile{           
+            width: 80%;
+            margin-top: 150px;
+            
+        }
+
+      
+        h1{
+            font-size: 60px;
+            font-weight: 400;
+            border-bottom: 1px solid #282c2d;
+            margin-bottom: 20px;
+
+            @include mobile{           
+                font-size: 40px;
+                text-align: center;
+                
+             }
+        }
+
+        img{
+            height: 100px;
+            width: 100px;
+            @include mobile{           
+                height: 150px;
+                width: 150px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .profile_info{
+            display: flex;
+
+            @include mobile{           
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .profile_details{
+            margin-left: 30px;
+            flex: 1;
+
+            h2{
+                background-color: grey;
+                padding: 15px;
+                font-size: 15px;
+                padding-left: 20px;
+            }
+
+            .profile_signOut{
+                padding: 10px 20px;
+                font-size: 1rem;
+                margin-top: 5%;
+                width: 30%;
+                color: #fff;
+                background-color: #e50914;
+                outline: none;
+                cursor: pointer;
+                border: none;
+                @include mobile{           
+                   width: 60%; 
+                   margin-top: 20px;
+                    margin-left: 40px;
+                }
+            }
+        }
+
+    }
+
+
+}
